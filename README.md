@@ -1,4 +1,6 @@
-# React homework template
+# React langGO
+
+Customizable Language learning app
 
 Этот проект был создан при помощи
 [Create React App](https://github.com/facebook/create-react-app). Для знакомства

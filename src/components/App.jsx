@@ -1,16 +1,29 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import { Excercise } from "./Exercise/Excercise";
+import { Header } from "./Header/Header";
+import { Section } from "./Section/Section";
+import { TopicSelector } from "./TopicSelector/TopicSelector";
+import japanese from '../data/japanese.json'
+import { Component } from "react";
+
+export class App extends Component{
+
+  state = {
+    
+  }
+
+  render = () => {
+    return (
+      <div>
+        <Section>
+          <Header/>
+        </Section>
+        <Section>
+          <TopicSelector/>
+        </Section>
+        <Section>
+          <Excercise/>
+        </Section>
+      </div>
+    );
+  };
+}
