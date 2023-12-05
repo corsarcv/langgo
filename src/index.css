@@ -1,11 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
 
 :root {
-  --primary-color: #111111;
-  --secondary-color: #ffffff;
-  --main-color: hsl(251, 80%, 55%);
-  --accent-color: #eac645;
-  --background-color: #eee;
+  --primary-color: black;
+  --secondary-color: white;
+  --main-color: dodgerblue;
+  --accent-color: #ffda75;
+  --background-color: ivory;
 
 }
 

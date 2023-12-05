@@ -1,0 +1,20 @@
+.main{
+    padding: 20px;
+}
+.topics{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--main-color)
+}
+.topicSelector{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.topicSelector.selected{
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}

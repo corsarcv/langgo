@@ -1,8 +1,8 @@
 import { Component } from "react";
 import css from './Excercise.module.css'
 
-export class Excercise extends Component {
+export class Kana extends Component {
     render = () => (
-        <div>Excercise</div>
+        <div> ひらがな/カタカナ</div>
     )
 }

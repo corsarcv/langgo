@@ -1,4 +1,4 @@
-import { Excercise } from "./Exercise/Excercise";
+import { Excercise } from "./Exercise/Vocabulary";
 import { Header } from "./Header/Header";
 import { Section } from "./Section/Section";
 import { TopicSelector } from "./TopicSelector/TopicSelector";
@@ -8,7 +8,7 @@ import { Component } from "react";
 export class App extends Component{
 
   state = {
-    
+
   }
 
   render = () => {
@@ -19,9 +19,6 @@ export class App extends Component{
         </Section>
         <Section>
           <TopicSelector/>
-        </Section>
-        <Section>
-          <Excercise/>
         </Section>
       </div>
     );
