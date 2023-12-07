@@ -1,5 +1,5 @@
 {
-    "topics": ["Directions", "Family", "Meeting People", "Restaurant", "Time", "Travel", "Verbs"],
+    "topics": ["Colors", "Directions", "Family", "Meeting People", "Restaurant", "Time", "Travel", "Verbs"],
     "languages": [
         {"name": "kana", "display": "日本語 ひらがな"},
         {"name": "romaji", "display": "日本語 Rōmaji"},
@@ -22,6 +22,58 @@
             {
                 "topics": ["Meeting People"], 
                 "languages": {"english": "Good Evening", "romaji": "Konbanwa", "kana": "こんばんは"}
+            },
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Red", "romaji": "Aka", "kana": "あか", "kanji": "赤"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Oranje", "romaji": "Orenji", "kana": "レンジ", "kanji": "オ"}
+            },
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Yellow", "romaji": "Kiiro", "kana": "きいろ", "kanji": "黄色"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Green", "romaji": "Midori", "kana": "みどり", "kanji": "緑"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Light-Blue", "romaji": "Mizuiro", "kana": "みずいろ", "kanji": " 水色"}
+            },
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Blue", "romaji": "Ao", "kana": "あお", "kanji": "青"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Purple", "romaji": "Murasaki", "kana": "むらさき", "kanji": "紫"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Pink", "romaji": "Pinku", "kana": "ピンク"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Brown", "romaji": "Cha", "kana": "ちゃいろ", "kanji": "茶"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "Black", "romaji": "Kuro", "kana": "くろ", "kanji": "黒"}
+            }
+            ,
+            {
+                "topics": ["Colors"],
+                "languages": {"english": "White", "romaji": "Shiro", "kana": "しろ", "kanji": "白"}
             }
     ]
 }
