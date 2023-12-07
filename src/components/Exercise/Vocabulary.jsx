@@ -1,39 +1,52 @@
 import { Component } from "react";
 import css from './Excercise.module.css'
 import { Flipcard } from "components/FlipCard/FlipCard";
+import { DataUtilities } from "utilities/dataUtilities";
 
 export class Vocabulary extends Component {
     state = {
         topic: 'all',
-        direction: 'japanese'
+        language: DataUtilities.getAllLanguages()[0].name,
+        word: DataUtilities.getRandomWord(null)
     }
     onTopicChanged = (e) => {
-        this.setState({topic: e.target.options[e.selectedIndex]});
+        console.log('Setting topic', e.target.options[e.target.selectedIndex].value)
+        this.setState({topic: e.target.options[e.target.selectedIndex].value});
     }
 
     onDirectionChanged = (e) => {
-        this.setState({direction: e.target.options[e.selectedIndex]});
+        console.log('Setting language', e.target.options[e.target.selectedIndex].value);
+        this.setState({language: e.target.options[e.target.selectedIndex].value});
+    }
+
+    onNext = () => {
+        let iterCount = 0;
+        const maxIterCount = 100;
+        let newWord = null;
+        do {
+            iterCount += 1;
+            if (iterCount > maxIterCount)
+                break;
+            newWord = DataUtilities.getRandomWord(this.state.topic);
+        } while (newWord === this.state.word)
+        this.setState({word: newWord});
     }
     render = () => (
         <div>
             <div className={css.options}>
                 <select onChange={this.onTopicChanged} name="topic" id="topic">
-                    <option value="all">All Topics</option>
-                    <option value="verbs">Verbs</option>
-                    <option value="greetings">Greatings</option>
-                    <option value="travel">Travel</option>
-                    <option value="resturant">Restaurant</option>
-                    <option value="time">Time</option>
-                    <option value="directions">Directions</option>
+                <option value="all">All Topics</option>
+                    {DataUtilities.getAllTopics().map(topic=>(
+                        <option key={topic} value={topic}>{topic}</option>
+                    ))}
                 </select>
                 <select onChange={this.onDirectionChanged} name="direction" id="direction">
-                    <option value="japanese">日本語 - English</option>
-                    <option value="english">English - 日本語</option>
-                    <option value="romaji">Romaji - English</option>
-                    <option value="kanji">漢字 - English</option>
+                    {DataUtilities.getAllLanguages().map(lang => (
+                         <option key={lang.name} value={lang.name}>{lang.display}</option>
+                    ))}
                 </select>
             </div>
-            <Flipcard/>     
+            <Flipcard word={this.state.word} language={this.state.language} onNext={this.onNext}/>     
         </div>
     )
 }

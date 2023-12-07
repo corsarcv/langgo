@@ -1,3 +1,27 @@
 {
-    
+    "topics": ["Directions", "Family", "Meeting People", "Restaurant", "Time", "Travel", "Verbs"],
+    "languages": [
+        {"name": "kana", "display": "日本語 ひらがな"},
+        {"name": "romaji", "display": "日本語 Rōmaji"},
+        {"name": "kanji", "display": "日本語 漢字"},
+        {"name": "english", "display": "English"}
+    ],
+    "dictionary" : [
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {"english": "I", "romaji": "Watashi", "kanji": "私", "kana": "わたし"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Good Morning", "romaji": "Ohayō", "kana": "おはよう"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Hello", "romaji": "Kon'nichiwa", "kana": "こんにちは"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Good Evening", "romaji": "Konbanwa", "kana": "こんばんは"}
+            }
+    ]
 }

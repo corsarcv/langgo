@@ -1,6 +1,12 @@
 .header{
     color: var(--main-color);
     font-size: 30px;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--background-color);
+}
+
+.logogo{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }

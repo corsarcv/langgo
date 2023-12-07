@@ -1,3 +1,13 @@
+/* Flip card */
+
+.flipcard-container{
+    margin: 0 auto;
+    padding: 30px;
+    width: 310px;
+    height: 210px;
+    position: relative;
+
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
@@ -46,3 +56,89 @@
     color: var(--secondary-color);;
     transform: rotateY(180deg);
   }
+
+  /* Red and white arrow button */
+  .r_wrap {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+  
+  .b_round,
+  .s_round {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color);
+    transition: all 0.2s linear;
+  }
+  
+  .b_round {
+    opacity: 0;
+    background-color: var(--secondary-accent-color);
+  }
+  
+  .b_round:hover {
+    transform: scale(1.37);
+    opacity: 0.4;
+  }
+
+
+  .s_arrow {
+    width: 52px;
+    height: 52px;
+    color: blue;
+    background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+    transition: all 0.35s linear;
+    position: relative;
+    /*pointer-events: none;*/
+  }
+
+
+
+/* Moving arrows button   */
+
+.arrow {
+    position: absolute;
+    top: 70%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-top: 5px solid var(--secondary-accent-color);
+    border-left: 5px solid var(--secondary-accent-color);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(1) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}

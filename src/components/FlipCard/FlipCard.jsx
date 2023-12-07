@@ -1,17 +1,34 @@
 import css from './FlipCard.module.css'
 
-export const Flipcard = (props) =>
-    (
-    <div className={css["flip-card"]}>
-        <div className={css["flip-card-inner"]}>
-            <div className={css["flip-card-front"]}>
-                <h2>私</h2> 
+export const Flipcard = ({word, language, onNext}) => {
+    console.log('Flip for', word, language);
+    const wordItems = Object.entries(word);
+    return (
+    <div className={css["flipcard-container"]}>
+        <div className={css["flip-card"]}>
+            <div className={css["flip-card-inner"]}>
+                <div className={css["flip-card-front"]}>
+                    <h2>{word[language]}</h2> 
+                </div>
+                <div className={css["flip-card-back"]}>
+                    {wordItems.map(([lang, display]) => 
+                        lang !== language && (<h3 key={lang}>{lang}: {display}</h3>)
+                    )}
+                </div>
             </div>
-            <div className={css["flip-card-back"]}>
-                <h3>Kana: わたし</h3>
-                <h3>Romaji: Watashi</h3>
-                <h3>English: I</h3> 
-            </div>
+           
         </div>
+        <div onClick={onNext} className={css.r_wrap}>
+                <div className={css.b_round}></div>
+                    <div className={css.s_round}/>
+                    <div className={css.s_arrow}></div>
+                    
+            </div>
+                <div className={css.arrow} onClick={onNext}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>
     </div>
     )
+                }

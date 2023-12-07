@@ -2,5 +2,5 @@ import css from './Header.module.css'
 
 
 export const Header = () => (
-    <div className={css.header}>LangGO</div>
+    <div className={css.header}>Lang<span className={css.logogo}><strong>GO</strong></span></div>
 )
