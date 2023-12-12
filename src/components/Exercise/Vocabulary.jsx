@@ -10,11 +10,13 @@ export class Vocabulary extends Component {
         word: DataUtilities.getRandomWord(null)
     }
     onTopicChanged = (e) => {
+        console.log('=>Prev:', this.state.topic);
         console.log('Setting topic', e.target.options[e.target.selectedIndex].value)
         this.setState({topic: e.target.options[e.target.selectedIndex].value});
     }
 
     onDirectionChanged = (e) => {
+        console.log('=>Prev:', this.state.language);
         console.log('Setting language', e.target.options[e.target.selectedIndex].value);
         this.setState({language: e.target.options[e.target.selectedIndex].value});
     }

@@ -1,24 +1,27 @@
 import css from './FlipCard.module.css'
 
 export const Flipcard = ({word, language, onNext}) => {
-    console.log('Flip for', word, language);
-    const wordItems = Object.entries(word);
+    const wordItems = Object.entries(word.languages);
     return (
     <div className={css["flipcard-container"]}>
         <div className={css["flip-card"]}>
             <div className={css["flip-card-inner"]}>
                 <div className={css["flip-card-front"]}>
-                    <h2>{word[language]}</h2> 
+                    <h2 className={css["flip-card-front-word"]}>{word.languages[language]}</h2> 
+                    <div className={css["flip-card-front-topics"]}>{word.topics.join(" | ")}</div>
                 </div>
                 <div className={css["flip-card-back"]}>
-                    <ul>
+                    <table>
+                        <tbody>
                         {wordItems.map(([lang, display]) => 
                             lang !== language && (
-                                <li>
-                                    <h3 className={css["flip-back-word"]} key={lang}>{lang}: {display}</h3>
-                                </li>)
+                                <tr key={lang} className={css["flip-back-row"]}>
+                                    <td className={css["flip-back-column"]}><h3>{lang}</h3></td>
+                                    <td className={css["flip-back-column"]}><h3>{display}</h3></td>
+                                </tr>)
                         )}
-                    </ul>
+                        </tbody>
+                    </table>
                 </div>
             </div>
            

@@ -57,8 +57,31 @@
     transform: rotateY(180deg);
   }
 
-  .flip-back-word {
+  .flip-card-front-word{
+    padding: 30px;
+  }
+
+  .flip-card-front-topics{
+    text-align: right;
+    padding: 10px;
+    color: var(--neutral-color);
+  }
+  .flip-card-back table{
+    width: 100%;
+
+  }
+  .flip-back-row {
     text-transform: capitalize;
+    padding: 2px;
+
+  }
+
+  .flip-back-column {
+    /*border: 1px solid white;
+    border-collapse: separate;*/
+    padding: 3px;
+    border-radius: 5px;
+
   }
 
   /* Red and white arrow button */

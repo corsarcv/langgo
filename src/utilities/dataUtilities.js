@@ -14,9 +14,8 @@ export class DataUtilities{
     static getRandomWord(topicsArray){
         const filteredWords = [...japanese.dictionary];
         const random = Math.floor(Math.random()*filteredWords.length);
-        console.log("Random", random);
-        console.log('Dict', japanese.dictionary)
-        return japanese.dictionary[random]["languages"];
+
+        return japanese.dictionary[random];
     }
 
 
