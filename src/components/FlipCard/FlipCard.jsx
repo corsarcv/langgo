@@ -11,9 +11,14 @@ export const Flipcard = ({word, language, onNext}) => {
                     <h2>{word[language]}</h2> 
                 </div>
                 <div className={css["flip-card-back"]}>
-                    {wordItems.map(([lang, display]) => 
-                        lang !== language && (<h3 key={lang}>{lang}: {display}</h3>)
-                    )}
+                    <ul>
+                        {wordItems.map(([lang, display]) => 
+                            lang !== language && (
+                                <li>
+                                    <h3 className={css["flip-back-word"]} key={lang}>{lang}: {display}</h3>
+                                </li>)
+                        )}
+                    </ul>
                 </div>
             </div>
            
@@ -24,11 +29,11 @@ export const Flipcard = ({word, language, onNext}) => {
                     <div className={css.s_arrow}></div>
                     
             </div>
-                <div className={css.arrow} onClick={onNext}>
+                {/* <div className={css.arrow} onClick={onNext}>
                     <span></span>
                     <span></span>
                     <span></span>
-                 </div>
+                 </div> */}
     </div>
     )
                 }

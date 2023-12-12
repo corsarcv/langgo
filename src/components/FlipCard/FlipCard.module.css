@@ -57,6 +57,10 @@
     transform: rotateY(180deg);
   }
 
+  .flip-back-word {
+    text-transform: capitalize;
+  }
+
   /* Red and white arrow button */
   .r_wrap {
     position: absolute;
@@ -142,3 +146,4 @@
         transform: rotate(45deg) translate(-20px, -20px);
     }
 }
+
