@@ -2,7 +2,7 @@ import { Vocabulary } from 'components/Exercise/Vocabulary';
 import css from './TopicSelector.module.css'
 import { Component } from "react";
 import { Grammar } from 'components/Exercise/Grammar';
-import { Kana } from 'components/Exercise/Kana';
+import { Kana } from 'components/Kana/Kana';
 import { Kanji } from 'components/Exercise/Kanji';
 
 export class TopicSelector extends Component{
