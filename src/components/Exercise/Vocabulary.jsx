@@ -4,21 +4,36 @@ import { Flipcard } from "components/FlipCard/FlipCard";
 import { DataUtilities } from "utilities/dataUtilities";
 
 export class Vocabulary extends Component {
+
+    constructor(props) {
+        super(props);
+        this.dataUtilities = new DataUtilities();
+      }
+
     state = {
-        topic: 'all',
-        language: DataUtilities.getAllLanguages()[0].name,
-        word: DataUtilities.getRandomWord(null)
+        topic: null,
+        language: null,
+        word: null,
+        hasError: false
     }
     onTopicChanged = (e) => {
-        console.log('=>Prev:', this.state.topic);
-        console.log('Setting topic', e.target.options[e.target.selectedIndex].value)
-        this.setState({topic: e.target.options[e.target.selectedIndex].value});
+        let newTopic = null;
+        if (e.target.selectedIndex === 0)
+            newTopic = null;
+        else
+            newTopic = e.target.options[e.target.selectedIndex].value
+
+        this.setState({
+            topic: newTopic,
+            hasError: false
+        }, this.onNext);
     }
 
     onDirectionChanged = (e) => {
-        console.log('=>Prev:', this.state.language);
-        console.log('Setting language', e.target.options[e.target.selectedIndex].value);
-        this.setState({language: e.target.options[e.target.selectedIndex].value});
+        this.setState({
+            language: e.target.options[e.target.selectedIndex].value,
+            hasError: false
+        }, this.onNext);
     }
 
     onNext = () => {
@@ -29,15 +44,34 @@ export class Vocabulary extends Component {
             iterCount += 1;
             if (iterCount > maxIterCount)
                 break;
-            newWord = DataUtilities.getRandomWord(this.state.topic);
-        } while (newWord === this.state.word)
+            newWord = this.dataUtilities.getRandomWord(this.state.topic, this.state.language);
+        } while (newWord === this.state.word && newWord)
         this.setState({word: newWord});
     }
-    render = () => (
+    componentDidMount = () => {
+        const defaultLang =  DataUtilities.getAllLanguages()[0].name;
+        this.setState({ 
+            language: defaultLang,
+            word: this.dataUtilities.getRandomWord(null, defaultLang )
+         });
+      }
+
+      componentDidCatch(error, info) {
+       // Якщо метод був викликаний, отже, є помилка!
+       console.log("Error", error, info);
+       this.setState({hasError: true});
+      }
+     
+     
+    render = () => {
+        if (this.state.hasError) {
+            return <h1>Something went wrong, please change criteria and try again</h1>;
+        }
+        return (
         <div>
             <div className={css.options}>
                 <select onChange={this.onTopicChanged} name="topic" id="topic">
-                <option value="all">All Topics</option>
+                <option>All Topics</option>
                     {DataUtilities.getAllTopics().map(topic=>(
                         <option key={topic} value={topic}>{topic}</option>
                     ))}
@@ -50,5 +84,7 @@ export class Vocabulary extends Component {
             </div>
             <Flipcard word={this.state.word} language={this.state.language} onNext={this.onNext}/>     
         </div>
-    )
+        )
+
+    }
 }

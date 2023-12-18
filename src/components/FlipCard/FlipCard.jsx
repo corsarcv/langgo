@@ -1,14 +1,20 @@
 import css from './FlipCard.module.css'
 
 export const Flipcard = ({word, language, onNext}) => {
+    if (!word)
+        return (<h2>No results... Please change search criteria.</h2>)
     const wordItems = Object.entries(word.languages);
     return (
     <div className={css["flipcard-container"]}>
         <div className={css["flip-card"]}>
             <div className={css["flip-card-inner"]}>
                 <div className={css["flip-card-front"]}>
-                    <h2 className={css["flip-card-front-word"]}>{word.languages[language]}</h2> 
-                    <div className={css["flip-card-front-topics"]}>{word.topics.join(" | ")}</div>
+                    <h2 className={css["flip-card-front-word"]}>
+                        {word.languages[language]}
+                    </h2> 
+                    <div className={css["flip-card-front-topics"]}>
+                        {word.topics.join(" | ")}
+                    </div>
                 </div>
                 <div className={css["flip-card-back"]}>
                     <table>
@@ -16,8 +22,12 @@ export const Flipcard = ({word, language, onNext}) => {
                         {wordItems.map(([lang, display]) => 
                             lang !== language && (
                                 <tr key={lang} className={css["flip-back-row"]}>
-                                    <td className={css["flip-back-column"]}><h3>{lang}</h3></td>
-                                    <td className={css["flip-back-column"]}><h3>{display}</h3></td>
+                                    <td className={css["flip-back-column"]}>
+                                        <h3>{lang}</h3>
+                                    </td>
+                                    <td className={css["flip-back-column"]}>
+                                        <h3>{display}</h3>
+                                    </td>
                                 </tr>)
                         )}
                         </tbody>

@@ -1,7 +1,8 @@
 .header{
+    font-weight: bold;
     color: var(--main-color);
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--background-color);
 }
 

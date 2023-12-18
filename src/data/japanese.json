@@ -1,5 +1,7 @@
 {
-    "topics": ["Colors", "Directions", "Family", "Meeting People", "Restaurant", "Time", "Travel", "Verbs"],
+    "topics": ["Colors", "Directions", "Family", "Food", "Meeting People",
+    "Questions", "Restaurant", 
+    "Time", "Travel", "Verbs"],
     "languages": [
         {"name": "kana", "display": "日本語 ひらがな"},
         {"name": "romaji", "display": "日本語 Rōmaji"},
@@ -22,6 +24,47 @@
             {
                 "topics": ["Meeting People"], 
                 "languages": {"english": "Good Evening", "romaji": "Konbanwa", "kana": "こんばんは"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Bye(informal)", "romaji": "Matane", "kana": "またね"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Bye (informal)", "romaji": "Jāne", "kana": "じゃあね"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Farewell", "romaji": "Sayōnara", "kana": "さようなら"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Sorry", "romaji": "Gomennasai", "kana": "ごめんなさい", "kanji": "御免なさい"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Good night", "romaji": "Oyasuminasai", "kana": "おやすみなさい"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": " I will be back (when leaving home)", "romaji": "Itte kimasu", "kana": "いってきます", "kanji": "行ってきます"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "See you later", "romaji": "Itterasshay", "kana": "さようなら", "kanji": "行ってらっしゃい"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "I am back (after returning home)", "romaji": "Tadaima", "kana": "ただいま"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Welcome Back", "romaji": "Okaerinasai", "kana": "おかえりなさい"}
+            },
+
+            {
+                "topics": ["Questions"], 
+                "languages": {"english": "What", "romaji": "Nan", "kana": "なん", "kanji": "何"}
             },
             {
                 "topics": ["Colors"],

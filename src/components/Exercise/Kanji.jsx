@@ -1,5 +1,5 @@
 import { Component } from "react";
-import css from './Excercise.module.css'
+import _ from './Excercise.module.css'
 
 export class Kanji extends Component {
     render = () => (
