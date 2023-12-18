@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/langgo/static/css/main.2b830b28.css",
-    "main.js": "/langgo/static/js/main.148e2072.js",
+    "main.css": "/langgo/static/css/main.b1bbba64.css",
+    "main.js": "/langgo/static/js/main.6f7c0de5.js",
+    "static/media/hiragana.jpg": "/langgo/static/media/hiragana.737d60cc97fc69a857c2.jpg",
+    "static/media/katakana.jpg": "/langgo/static/media/katakana.bef8c7dce07608103893.jpg",
+    "static/media/hiragana-dakuten.jpg": "/langgo/static/media/hiragana-dakuten.8a95832710ec74f1d78c.jpg",
     "index.html": "/langgo/index.html",
-    "main.2b830b28.css.map": "/langgo/static/css/main.2b830b28.css.map",
-    "main.148e2072.js.map": "/langgo/static/js/main.148e2072.js.map"
+    "main.b1bbba64.css.map": "/langgo/static/css/main.b1bbba64.css.map",
+    "main.6f7c0de5.js.map": "/langgo/static/js/main.6f7c0de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b830b28.css",
-    "static/js/main.148e2072.js"
+    "static/css/main.b1bbba64.css",
+    "static/js/main.6f7c0de5.js"
   ]
 }
