@@ -14,6 +14,46 @@
                 "languages": {"english": "I", "romaji": "Watashi", "kanji": "私", "kana": "わたし"}
             },
             {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {"english": "You", "romaji": "Anata", "kanji": "貴方", "kana": "あなた"}
+            },
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {"english": "We", "romaji": "Watashitachi", "kanji": "私たち", "kana": "わたしたち"}
+            },
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {
+                    "english": "Woman", 
+                    "romaji": "Onna", 
+                    "kanji": "女", 
+                    "kana": "おんな"}
+            },
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {
+                    "english": "Man", 
+                    "romaji": "Otoko", 
+                    "kanji": "男", 
+                    "kana": "おとこ"}
+            },
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {
+                    "english": "Girl", 
+                    "romaji": "Onnanoko", 
+                    "kanji": "女の子", 
+                    "kana": "おんあのこ"}
+            },
+            {
+                "topics": ["Meeting People", "Family"], 
+                "languages": {
+                    "english": "Boy", 
+                    "romaji": "Otokonoko", 
+                    "kanji": "男の子", 
+                    "kana": "おとこのこ"}
+            },
+            {
                 "topics": ["Meeting People"], 
                 "languages": {"english": "Good Morning", "romaji": "Ohayō", "kana": "おはよう"}
             },
@@ -39,29 +79,80 @@
             },
             {
                 "topics": ["Meeting People"], 
-                "languages": {"english": "Sorry", "romaji": "Gomennasai", "kana": "ごめんなさい", "kanji": "御免なさい"}
+                "languages": {
+                    "english": "Sorry", 
+                    "romaji": "Gomennasai", 
+                    "kana": "ごめんなさい", 
+                    "kanji": "御免なさい"}
             },
             {
                 "topics": ["Meeting People"], 
-                "languages": {"english": "Good night", "romaji": "Oyasuminasai", "kana": "おやすみなさい"}
+                "languages": {
+                    "english": "Excuse me", 
+                    "romaji": "Sumimasen", 
+                    "kana": "すみません"}
+            },            
+            {
+                "topics": ["Meeting People"], 
+                "languages": {
+                    "english": "Good night", 
+                    "romaji": "Oyasuminasai", 
+                    "kana": "おやすみなさい"}
             },
             {
                 "topics": ["Meeting People"], 
-                "languages": {"english": " I will be back (when leaving home)", "romaji": "Itte kimasu", "kana": "いってきます", "kanji": "行ってきます"}
+                "languages": {
+                    "english": " I will be back (when leaving home)", 
+                    "romaji": "Itte kimasu", 
+                    "kana": "いってきます", 
+                    "kanji": "行ってきます"}
             },
             {
                 "topics": ["Meeting People"], 
-                "languages": {"english": "See you later", "romaji": "Itterasshay", "kana": "さようなら", "kanji": "行ってらっしゃい"}
+                "languages": {
+                    "english": "See you later", 
+                    "romaji": "Itterasshay", 
+                    "kana": "さようなら", 
+                    "kanji": "行ってらっしゃい"}
             },
             {
                 "topics": ["Meeting People"], 
-                "languages": {"english": "I am back (after returning home)", "romaji": "Tadaima", "kana": "ただいま"}
+                "languages": {
+                    "english": "I am back (after returning home)", 
+                    "romaji": "Tadaima", "kana": "ただいま"}
             },
             {
                 "topics": ["Meeting People"], 
                 "languages": {"english": "Welcome Back", "romaji": "Okaerinasai", "kana": "おかえりなさい"}
             },
-
+            {
+                "topics": ["Meeting People"], 
+                "languages": {"english": "Nice to meet you!", "romaji": "Hajimemashite", "kana": "はじめまして"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {
+                    "english": "What is your name?", 
+                    "romaji": "Onamae wa nandesuka?", 
+                    "kana": "おなまえなんですか", 
+                    "kanji": "お名前なんですか"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {
+                    "english": "I am [Name]", 
+                    "romaji": "[Name] to moushimasu", 
+                    "kana": "[Name]ともうします", 
+                    "kanji": "[Name]と申します"}
+            },
+            {
+                "topics": ["Meeting People"], 
+                "languages": {
+                    "english": "Pleased to meet you!", 
+                    "romaji": "Yaroshiku onegai shimasu", 
+                    "kana": "よろしくおねがいします", 
+                    "kanji": "よろしくお願いします"}
+            },
             {
                 "topics": ["Questions"], 
                 "languages": {"english": "What", "romaji": "Nan", "kana": "なん", "kanji": "何"}

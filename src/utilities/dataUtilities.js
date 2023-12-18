@@ -3,6 +3,7 @@ import japanese from '../data/japanese.json';
 export class DataUtilities{
 
     constructor() {
+        let count = 0;
         this.allWordsByLanguageMap = {};
         this.wordsByLanguageAndTopicMap = {};
         japanese.dictionary.forEach(word => {
@@ -10,6 +11,7 @@ export class DataUtilities{
                 if (lang in this.allWordsByLanguageMap === false) {
                     this.allWordsByLanguageMap[lang] = [];
                 }
+                count += 1;
                 this.allWordsByLanguageMap[lang].push(word);                
             });
             word.topics.forEach(topic => {
@@ -25,6 +27,7 @@ export class DataUtilities{
     
             });
         });
+        console.log('Total number of words loaded: ', count);
 
     }
     static getAllTopics(){
@@ -37,8 +40,8 @@ export class DataUtilities{
     }
 
     getRandomWord(topic, language){
-        console.log('Getting new word for', topic, language)
-        let filteredWords;
+        // console.log('Getting new word for', topic, language);
+        let filteredWords = null;
         if (topic === null)
             if (language in this.allWordsByLanguageMap === false)
                 return null;
