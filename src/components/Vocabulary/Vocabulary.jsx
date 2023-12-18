@@ -1,5 +1,5 @@
 import { Component } from "react";
-import css from './Excercise.module.css'
+import css from './Vocabulary.module.css'
 import { Flipcard } from "components/FlipCard/FlipCard";
 import { DataUtilities } from "utilities/dataUtilities";
 

@@ -1,4 +1,4 @@
-import { Vocabulary } from 'components/Exercise/Vocabulary';
+import { Vocabulary } from 'components/Vocabulary/Vocabulary';
 import css from './TopicSelector.module.css'
 import { Component } from "react";
 import { Grammar } from 'components/Exercise/Grammar';
