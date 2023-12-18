@@ -7,9 +7,9 @@ import css from "./Kana.module.css";
 export class Kana extends Component {
     render = () => (
         <div className={css.container}>
-            <img width="640" className={css.img} src={hiragana}></img>
-            <img width="640" className={css.img} src={katakana}></img>
-            <img width="640" className={css.img} src={dakuten}></img>
+            <img width="640" className={css.img} alt="hiragana" src={hiragana}></img>
+            <img width="640" className={css.img} alt="katakana" src={katakana}></img>
+            <img width="640" className={css.img} alt="dakuten" src={dakuten}></img>
         </div>
     )
 }
