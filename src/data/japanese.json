@@ -1,7 +1,9 @@
 {
-    "topics": ["Colors", "Directions", "Family", "Food", "Meeting People",
-    "Questions", "Restaurant", 
-    "Time", "Travel", "Verbs"],
+    "topics": [
+        "Colors", "Directions", "Family", "Food", "Jobs", "Meeting People",
+        "Places", "Questions", "Restaurant",  "Time", "Travel", "Shopping",
+        "Adverbs", "Verbs", "Numbers"],
+
     "languages": [
         {"name": "kana", "display": "日本語 ひらがな"},
         {"name": "romaji", "display": "日本語 Rōmaji"},
@@ -78,6 +80,48 @@
                 "languages": {"english": "Farewell", "romaji": "Sayōnara", "kana": "さようなら"}
             },
             {
+                "topics": ["Meeting People", "Questions"],
+                "languages": {
+                    "english": "How old are you?",
+                    "romaji": "Nan-saidesu ka?",
+                    "kanji": "何歳ですか",
+                    "kana": "なんなんさいですか"
+                }
+            },
+            {
+                "topics": ["Shopping", "Questions"],
+                "languages": {
+                    "english": "How much?",
+                    "romaji": "ikura",
+                    "kanji": "幾ら",
+                    "kana": "いくら(ですか)"
+                }
+            },
+            {
+                "topics": ["Meeting People", "Numbers"],
+                "languages": {
+                    "english": "I am １ year old",
+                    "romaji": "Issai desu",
+                    "kana": "いっさいです"
+                }
+            }, 
+            {
+                "topics": ["Meeting People", "Numbers"],
+                "languages": {
+                    "english": "I am ８ years old",
+                    "romaji": "Hassai desu",
+                    "kana": "はっさいです"
+                }
+            },  
+            {
+                "topics": ["Meeting People", "Numbers"],
+                "languages": {
+                    "english": "I am １０ years old",
+                    "romaji": "じゅっさいです",
+                    "kana": "なんなんさいですか"
+                }
+            },             
+            {
                 "topics": ["Meeting People"], 
                 "languages": {
                     "english": "Sorry", 
@@ -130,7 +174,7 @@
                 "languages": {"english": "Nice to meet you!", "romaji": "Hajimemashite", "kana": "はじめまして"}
             },
             {
-                "topics": ["Meeting People"], 
+                "topics": ["Meeting People", "Questions"], 
                 "languages": {
                     "english": "What is your name?", 
                     "romaji": "Onamae wa nandesuka?", 
@@ -155,7 +199,7 @@
             },
             {
                 "topics": ["Questions"], 
-                "languages": {"english": "What", "romaji": "Nan", "kana": "なん", "kanji": "何"}
+                "languages": {"english": "What?", "romaji": "Nan", "kana": "なん", "kanji": "何"}
             },
             {
                 "topics": ["Colors"],
@@ -208,6 +252,324 @@
             {
                 "topics": ["Colors"],
                 "languages": {"english": "White", "romaji": "Shiro", "kana": "しろ", "kanji": "白"}
+            },
+
+            {
+                "topics": ["Time", "Questions"],
+                "languages": {
+                    "english": "When？", 
+                    "romaji": "Itsu", 
+                    "kana": "いつ"}
+            },
+            {
+                "topics": ["Time", "Questions"],
+                "languages": {
+                    "english": "What time?", 
+                    "romaji": "Nanji", 
+                    "kana": "なんじ", 
+                    "kanji": "何時"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Now", 
+                    "romaji": "Ima", 
+                    "kana": "いま", 
+                    "kanji": "今"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Today", 
+                    "romaji": "Kyō", 
+                    "kana": "きょ", 
+                    "kanji": "今日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Yesterday", 
+                    "romaji": "kinō", 
+                    "kana": "きの", 
+                    "kanji": "昨日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Tomorrow", 
+                    "romaji": "ashita", 
+                    "kana": "あした", 
+                    "kanji": "明日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Day before yesterday", 
+                    "romaji": "ototoi", 
+                    "kana": "おととい", 
+                    "kanji": "一昨日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Day after tomorrow", 
+                    "romaji": "asatte", 
+                    "kana": "あさって", 
+                    "kanji": "明後日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "This morning", 
+                    "romaji": "kesa", 
+                    "kana": "けさ", 
+                    "kanji": "今朝"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Tonight (formal)", 
+                    "romaji": "kon’ya", 
+                    "kana": "こんや", 
+                    "kanji": "今夜"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Tonight", 
+                    "romaji": "konban", 
+                    "kana": "こんばん", 
+                    "kanji": "今晩"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Last night", 
+                    "romaji": "Kinoo no ban", 
+                    "kana": "きのうのばん"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Evening", 
+                    "romaji": "Yoru", 
+                    "kana": "よる",
+                    "kanji": "夜"
+                }
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "This week", 
+                    "romaji": "konshū", 
+                    "kana": "こんしゅ", 
+                    "kanji": "今週"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Last week", 
+                    "romaji": "senshū", 
+                    "kana": "せんしゅ", 
+                    "kanji": "先週"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Next week", 
+                    "romaji": "raishū", 
+                    "kana": "らいしゅ", 
+                    "kanji": "来週"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "This month", 
+                    "romaji": "kongetsu", 
+                    "kana": "こんげつ", 
+                    "kanji": "今月"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Last month", 
+                    "romaji": "sengetsu", 
+                    "kana": "せんげつ", 
+                    "kanji": "先月"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Next month", 
+                    "romaji": "raigetsu", 
+                    "kana": "らいげつ", 
+                    "kanji": "来月"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "This year", 
+                    "romaji": "kotoshi", 
+                    "kana": "ことしことし", 
+                    "kanji": "今年"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Last year", 
+                    "romaji": "kyonen", 
+                    "kana": "きょねんきょねん", 
+                    "kanji": "去年"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Next year", 
+                    "romaji": "rainen", 
+                    "kana": "らいねん", 
+                    "kanji": "来年"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "AM/PM", 
+                    "romaji": "Gozen/Gogo", 
+                    "kana": "ごぜん・ごご", 
+                    "kanji": "午前・午後"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "From/To(until)", 
+                    "romaji": "Kara/Made", 
+                    "kana": "から・まで"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Every Day", 
+                    "romaji": "Mainichi", 
+                    "kana": "まいにち",
+                    "kanji": "毎日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Every Morning", 
+                    "romaji": "Maiasa", 
+                    "kana": "まいあさ",
+                    "kanji":"毎朝"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Every Night", 
+                    "romaji": "Maiasa", 
+                    "kana": "まいばん",
+                    "kanji":"毎晩"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Day", 
+                    "romaji": "Nichi", 
+                    "kana": "にち",
+                    "kanji":"日"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Month", 
+                    "romaji": "Getsu", 
+                    "kana": "げつ",
+                    "kanji":"月"}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Year", 
+                    "romaji": "Nen", 
+                    "kana": "",
+                    "kanji":""}
+            },
+            {
+                "topics": ["Time"],
+                "languages": {
+                    "english": "Every", 
+                    "romaji": "Main", 
+                    "kana": "まい",
+                    "kanji":"毎"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Teacher", 
+                    "romaji": "Sensei", 
+                    "kana": "せんせい",
+                    "kanji":"先生"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Student", 
+                    "romaji": "Gakusei", 
+                    "kana": "がくせい",
+                    "kanji":"学生"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Company Employee", 
+                    "romaji": "Kaishain", 
+                    "kana": "かいしゃいん",
+                    "kanji":"会社員"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Banker", 
+                    "romaji": "Ginkouin", 
+                    "kana": "ぎんこういん",
+                    "kanji":"銀行員"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Doctor", 
+                    "romaji": "Isha", 
+                    "kana": "いしゃ",
+                    "kanji":"医者"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Engineer", 
+                    "romaji": "Enjinia", 
+                    "kana": "エンジニア"}
+            },
+            {
+                "topics": ["Jobs"],
+                "languages": {
+                    "english": "Researcher", 
+                    "romaji": "Kenkyuusha", 
+                    "kana": "けんきゅうしゃ",
+                    "kanji":"研究者"}
+            },
+            {
+                "topics": ["Places"],
+                "languages": {
+                    "english": "University", 
+                    "romaji": "Daigaku", 
+                    "kana": "だいがく",
+                    "kanji":"大学"}
+            },
+            {
+                "topics": ["Places"],
+                "languages": {
+                    "english": "Hospital", 
+                    "romaji": "Byouin", 
+                    "kana": "びょういん",
+                    "kanji":"病院"}
             }
     ]
 }
